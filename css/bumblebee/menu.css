@@ -1,0 +1,79 @@
+.no-user-select, .menu li a {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+.menu.v-drop {
+  min-width: 170px;
+  height: auto;
+  width: auto;
+  padding: 5px 0;
+  box-shadow: 0 4px 7px var(--subMenuShadowColor);
+  border: 1px solid var(--subMenuBorderColor);
+  background: #fbfbfb;
+  /*box-shadow: 3px 3px 0.1em 0.0025em rgb(165, 165, 165);*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 150px; }
+  .menu.v-drop ul li {
+    width: 100%;
+    height: 25px;
+    position: relative;
+    cursor: default;
+    white-space: nowrap;
+    box-sizing: content-box; }
+    .menu.v-drop ul li a {
+      display: block; }
+.menu.h-menu ul li {
+  display: inline-block;
+  line-height: 3.2; }
+  .menu.h-menu ul li.fl {
+    float: left; }
+  .menu.h-menu ul li ul {
+    display: none;
+    padding: 5px 0; }
+    .menu.h-menu ul li ul li {
+      float: none;
+      position: relative; }
+    .menu.h-menu ul li ul :hover {
+      display: block; }
+.menu.h-menu ul ul {
+  position: absolute;
+  min-width: 250px;
+  padding: 5px 0;
+  top: 100%;
+  width: auto;
+  /*box-shadow: 0 2px 2px var(--subMenuShadowColor);*/
+  box-shadow: 0 4px 7px var(--subMenuShadowColor);
+  border: 1px solid var(--subMenuBorderColor); }
+.menu li {
+  color: #2d2c2c; }
+  .menu li.v-divider, .menu li.vDivider {
+    padding: 0;
+    border-bottom: 1px solid #c6c6c6;
+    height: 0 !important;
+    width: 95% !important;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 5px; }
+  .menu li.h-divider, .menu li.hDivider {
+    padding: 0;
+    border-right: 1px solid #c6c6c6;
+    height: 95% !important;
+    width: 0 !important;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .menu li :hover:not(.disabledMenuItem) {
+    background-color: rgba(67, 187, 254, 0.46) !important;
+    overflow: visible !important; }
+.menu li a {
+  padding: 2px 5px;
+  color: #2d2c2c; }
+.menu li:hover:not(.disabled) ul {
+  display: block; }
+
+/*# sourceMappingURL=menu.css.map */
