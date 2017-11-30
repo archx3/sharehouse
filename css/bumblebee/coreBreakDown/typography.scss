@@ -5,7 +5,6 @@
   font-family: "segoe mdl2 Assets", sans-serif;
   vertical-align: text-bottom;
   pointer-events: none;
-
 }
 
 .thinMdl
@@ -109,28 +108,94 @@
   font-weight: 900;
 }
 
-.ltsp0{
-  letter-spacing: 0;
+.ltsp
+{
+  &0
+  {
+    letter-spacing: 0;
+  }
+
+  &1
+  {
+    letter-spacing: 1px;
+  }
+
+  &2
+  {
+    letter-spacing: 2px;
+  }
+  &3
+  {
+    letter-spacing: 3px;
+  }
+  &4
+  {
+    letter-spacing: 4px;
+  }
+
+  &5
+  {
+    letter-spacing: 5px;
+  }
 }
 
-.ltsp1{
-  letter-spacing: 1px;
-}
+.fts
+{
+  &5
+  {
+    font-size: 5px;
+  }
 
-.ltsp2{
-  letter-spacing: 2px;
-}
+  &11
+  {
+    font-size: 11px;
+  }
 
-.ltsp3{
-  letter-spacing: 3px;
-}
+  &12
+  {
+    font-size: 12px;
+  }
 
-.ltsp4{
-  letter-spacing: 4px;
-}
+  &15
+  {
+    font-size: 12px;
+  }
 
-.ltsp5{
-  letter-spacing: 5px;
+  &20
+  {
+    font-size: 20px;
+  }
+
+  &25
+  {
+    font-size: 25px;
+  }
+
+  &30
+  {
+    font-size: 30px;
+  }
+
+  &35
+  {
+    font-size: 35px;
+  }
+
+  &40
+  {
+    font-size: 40px;
+  }
+
+  &45
+  {
+    font-size: 45px;
+  }
+
+  &50
+  {
+    font-size: 50px;
+  }
+
 }
 
 .ellipsify

@@ -4,6 +4,19 @@
 
 @import "nav";
 
+.cl-pri
+{
+  color: $orangeColor;
+}
+
+.cl-pri2{
+  color:  $darkBlue;
+}
+
+.cl-pri2-1{
+  color:  $darkBlue2;
+}
+
 section.container
 {
   background-color: $darkBlue;
@@ -17,7 +30,8 @@ section.container
 
   .home-text
   {
-    margin-top: calc(50% - 165px);
+    margin-top: calc(50% - 145px);
+    //margin-top: 20%;
     text-align: center;
     color: #ffffff;
 
@@ -26,8 +40,8 @@ section.container
       font-family: "", sans-serif;
       //margin-top:inherit;
     }
-
     .slogan{
+
       background-color: #fff;
       color: $darkBlue;
 
@@ -41,6 +55,29 @@ section.container
     background-color: #fff;
   }
 
+  .tabHead, .activeTabHead{
+    padding: 10px 20px;
+    max-width: unset;
+    text-align: center;
+    font-weight: unset;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .tabHead.activeTabHead, .activeTabHead{
+    background-color: #fff;
+    a{
+      font-weight: bold;
+    }
+  }
+
+  .tabHead
+  {
+    &:hover{
+      background-color: fade_out($orangeColor, .5);
+    }
+  }
+
   //region specific sections
   &.home{
     .col-2{
@@ -52,6 +89,32 @@ section.container
     background-color: $darkBlue;
     opacity: .7;
     //z-index: 2;
+  }
+
+  .srv-con{
+    padding-right: 9.3vw !important;
+    padding-left: 9.3vw !important;
+
+    .srv-con-inr{
+      padding-top: 80px !important;
+      padding-right: 6.6vw !important;
+      padding-bottom: 80px !important;
+      padding-left: 6.6vw !important;
+
+      .txt-img-con{
+        h2{
+          margin-bottom: 15px;
+        }
+
+        p{
+          line-height: 1.71429;
+        }
+      }
+    }
+  }
+
+  .team-mate{
+
   }
 }
 
@@ -184,12 +247,38 @@ $aboutDChevronDim : 45px;
     padding: 10px;
   }
 
+  .l-form-head{
+    color: $darkBlue2;
+  }
+
   .tabHeads{
     height:20%;
   }
 
   .panes{
     height: 80%;
+  }
+
+  button{
+    cursor: pointer;
+    background-color: $orangeColor;
+    color: #fff;
+    border-color:#fff;
+    -webkit-transition: background-color .3s;-moz-transition: background-color .3s;-ms-transition: background-color .3s;-o-transition: background-color .3s;transition: background-color .3s;
+
+    &:hover{
+      background-color: fade_out($orangeColor, 0.2);
+      //color: fade_out($orangeColor, 0.3);
+      //border-color:$orangeColor
+    }
+  }
+
+  a{
+    color: $darkBlue2;
+    -webkit-transition: color .3s;-moz-transition: color .3s;-ms-transition: color .3s;-o-transition: color .3s;transition: color .3s;
+    &:hover{
+      color: $darkBlue;
+    }
   }
 }
 
