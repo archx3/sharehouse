@@ -524,9 +524,9 @@ div.dialog .formFoot
   border-top: 1px solid var(--themeHighlightColor);
 }
 
-button:not(.colEditPlusIcon)
+button
 {
-  padding: 5px;
+  //padding: 5px;
 }
 
 div.dialog .formFoot button, .footBtn

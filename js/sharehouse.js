@@ -166,7 +166,7 @@
                            {
                               1 : {
                                  containerID : "opform",
-                                 tabName     : "Opreator",
+                                 tabName     : "Operator",
                                  activeTab   : true
                               },
                               2 : {

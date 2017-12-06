@@ -168,7 +168,7 @@ form {
   padding: 2%;
   /*width:calc(100% - 50%)*/ }
 
-input[type="text"], input[type="password"] {
+input[type="text"]:not(.mb0):not(.m0), input[type="password"] {
   margin-bottom: 4%;
   /*border-radius: 3px;*/
   color: #555; }

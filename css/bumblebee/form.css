@@ -402,9 +402,6 @@ div.dialog .formFoot {
   background-color: var(--dialogFootColor);
   border-top: 1px solid var(--themeHighlightColor); }
 
-button:not(.colEditPlusIcon) {
-  padding: 5px; }
-
 div.dialog .formFoot button, .footBtn {
   height: 35px;
   float: right;

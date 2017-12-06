@@ -4,6 +4,19 @@
 
 @import "nav";
 
+.cl-pri
+{
+  color: $orangeColor;
+}
+
+.cl-pri2{
+  color:  $darkBlue;
+}
+
+.cl-pri2-1{
+  color:  $darkBlue2;
+}
+
 section.container
 {
   background-color: $darkBlue;
@@ -15,9 +28,14 @@ section.container
   -o-transition: top .3s;
   transition: top .3s;
 
+  &.contact{
+    background-color: #fff;
+  }
+
   .home-text
   {
-    margin-top: calc(50% - 165px);
+    margin-top: calc(50% - 145px);
+    //margin-top: 20%;
     text-align: center;
     color: #ffffff;
 
@@ -26,8 +44,8 @@ section.container
       font-family: "", sans-serif;
       //margin-top:inherit;
     }
-
     .slogan{
+
       background-color: #fff;
       color: $darkBlue;
 
@@ -39,6 +57,29 @@ section.container
 
   .txt{
     background-color: #fff;
+  }
+
+  .tabHead, .activeTabHead{
+    padding: 10px 20px;
+    max-width: unset;
+    text-align: center;
+    font-weight: unset;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .tabHead.activeTabHead, .activeTabHead{
+    background-color: #fff;
+    a{
+      font-weight: bold;
+    }
+  }
+
+  .tabHead
+  {
+    &:hover{
+      background-color: fade_out($orangeColor, .5);
+    }
   }
 
   //region specific sections
@@ -53,6 +94,59 @@ section.container
     opacity: .7;
     //z-index: 2;
   }
+
+  .srv-con{
+    padding-right: 9.3vw !important;
+    padding-left: 9.3vw !important;
+
+    .srv-con-inr{
+      padding-top: 80px !important;
+      padding-right: 6.6vw !important;
+      padding-bottom: 80px !important;
+      padding-left: 6.6vw !important;
+
+      .txt-img-con{
+        h2{
+          margin-bottom: 15px;
+        }
+
+        p{
+          line-height: 1.71429;
+        }
+      }
+    }
+  }
+
+  .team-mate{
+
+    .img-con{
+      width: 170px;
+      height: 170px;
+      background-color: #89ff64;
+      //margin: 0 auto;
+
+      -webkit-clip-path: url("../images/mask.svg#hexagonPath");
+      -moz-clip-path: url("../images/mask.svg#hexagonPath");
+      -o-clip-path: url("../images/mask.svg#hexagonPath");
+      clip-path: url("../images/mask.svg#hexagonPath");
+      -webkit-mask: url("../images/mask.svg");
+      -moz-mask: url("../images/mask.svg");
+      -o-mask: url("../images/mask.svg");
+      mask: url("../images/mask.svg");
+    }
+
+    .det-con{
+      h4{
+        color: $darkBlue2;
+        //#726f81
+
+        &+p{
+          color: #726f81;
+          //
+        }
+      }
+    }
+  }
 }
 
 .bg-img{
@@ -64,7 +158,7 @@ section.container
 }
 
 .sh-bg{
-  background-image: url(../images/SharehouseLogo.png);
+  background-image: url(../images/SharehouseL.png);
 
 }
 
@@ -184,6 +278,10 @@ $aboutDChevronDim : 45px;
     padding: 10px;
   }
 
+  .l-form-head{
+    color: $darkBlue2;
+  }
+
   .tabHeads{
     height:20%;
   }
@@ -191,14 +289,70 @@ $aboutDChevronDim : 45px;
   .panes{
     height: 80%;
   }
+
+  button{
+    cursor: pointer;
+    background-color: $orangeColor;
+    color: #fff;
+    border-color:#fff;
+    -webkit-transition: background-color .3s;-moz-transition: background-color .3s;-ms-transition: background-color .3s;-o-transition: background-color .3s;transition: background-color .3s;
+
+    &:hover{
+      background-color: fade_out($orangeColor, 0.2);
+      //color: fade_out($orangeColor, 0.3);
+      //border-color:$orangeColor
+    }
+  }
+
+  a{
+    color: $darkBlue2;
+    -webkit-transition: color .3s;-moz-transition: color .3s;-ms-transition: color .3s;-o-transition: color .3s;transition: color .3s;
+    &:hover{
+      color: $darkBlue;
+    }
+  }
+}
+
+.blue-btn{
+  background-color: $darkBlue2;
+  color: #fff;
+  -webkit-transition: width .4s, min-width .4s;
+  -moz-transition: width .4s;
+  -ms-transition: width .4s;
+  -o-transition: width .4s;
+  transition: width .4s, min-width .4s, max-width .4s;
+  cursor: pointer;
+
+  &>i{
+    -webkit-transition: display .4s;
+    -moz-transition: display .4s;
+    -ms-transition: display .4s;
+    -o-transition: display .4s;
+    transition: display .4s;
+  }
+
+  &:hover>i{
+    display: inline;
+  }
+}
+
+//button.fa-long-arrow-right{
+//
+//}
+
+.tz-icon-color{
+  color: $orangeColor;
 }
 
 footer{
-  height: 300px;
+  height: 350px;
   color: #fff;
   //background-color: #0078ff;
   background-color: #021224;
 
+  .tz-icon-color{
+    color: $orangeColor;
+  }
 
   .footer-above
   {
@@ -217,9 +371,9 @@ footer{
       h3{
         font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 30px;
-        font-size: 1.75rem;
+        //text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 14px;
       }
     }
 
@@ -263,5 +417,47 @@ footer{
 
   .container{
     background-color: transparent;
+  }
+
+  .icon-large {
+    font-size: 35px !important;
+  }
+
+  .subscribe{
+    background-color: #fff;
+    a{
+      height: auto;
+      line-height: normal !important;
+      position: absolute;
+      right: 15px;
+      top: 7px;
+      vertical-align: top;
+    }
+  }
+}
+
+.txt-img-con{
+
+  h2{
+    color: $darkBlue;
+    text-align: center;
+  }
+
+  &>div{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .ppwk{
+    background-image: url("../images/pw.png");
+  }
+
+  .aoaw{
+    background-image: url("../images/aoaw.png");
+  }
+
+  .cotogo{
+    background-image: url("../images/cotogo.png");
   }
 }
