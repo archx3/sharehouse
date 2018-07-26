@@ -4,12 +4,6 @@
 .centerToDiv {
   margin: 0 auto; }
 
-.fr {
-  float: right !important; }
-
-.fl {
-  float: left !important; }
-
 .inlineBlock, .inline-block, .iblk {
   display: inline-block; }
 
@@ -26,9 +20,6 @@
   position: fixed; }
 
 .top0 {
-  top: 0; }
-
-.btm0 {
   top: 0; }
 
 .scrollable, .scroll, .xys {

@@ -178,19 +178,7 @@ input[type="text"]:focus, input[type="password"]:focus {
   color: #0078ff;
   /*text-align: left;*/ }
 
-input[type="submit"], button[type="submit"] {
-  width: 40%;
-  background: #0078ff;
-  border: 0;
-  padding: 4%;
-  font-size: 100%;
-  color: #fff;
-  cursor: pointer;
-  transition: background .3s;
-  -webkit-transition: background .3s;
-  font-weight: 400;
-  margin: 4%;
-  border-radius: 3px; }
+
 
 input[readonly] {
   border: none;

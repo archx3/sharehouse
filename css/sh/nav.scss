@@ -37,6 +37,7 @@
         a{
           color: $black;
           padding: 3px 25px;
+          font-weight: 400;
         }
         a:hover
         {
@@ -86,6 +87,7 @@
         transition: background .3s;
         color: $white;
         //background-color: #fff;
+        font-weight: 400;
       }
 
       a:hover
