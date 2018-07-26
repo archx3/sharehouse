@@ -59,23 +59,25 @@
                   <h3>Own a warehouse ?</h3>
                   <h4>Register with us</h4>
                </div>
-               <form action="#" class="operator pd30 pdtb20">
+               <div class="dv-notify-success" style="color: green">Thank you for registering with us</div>
+<div class="dv-notify-failed" style="color: red">There was an error adding you. Please retry.</div>
+               <form action="#" class="operator pd30 pdtb20 dv-add-oneto:leads:operator">
                   <div class="fields-row">
                      <div class="field-wrap">
-                        <input type="text" id="depo-firstname" placeholder="first Name" title="" name="">
+                        <input type="text" id="depo-firstname" placeholder="first Name" title="" name="first_name">
                      </div>
                      <div class="field-wrap">
-                        <input type="text" id="depo-lastname" placeholder="last Name" title="" name="">
+                        <input type="text" id="depo-lastname" placeholder="last Name" title="" name="last_name">
                      </div>
                   </div>
                   <div class="fields-row">
-                     <input type="text" id="depo-email" placeholder="Email" title="" name="">
-                     <input type="password" id="depo-password" placeholder="Password" title="" name="">
-                     <input type="text" id="depo-phone" placeholder="Phone" title="" name="">
+                     <input type="text" id="depo-email" placeholder="Email" title="" name="email">
+                     <input type="password" id="depo-password" placeholder="Password" title="" name="password">
+                     <input type="text" id="depo-phone" placeholder="Phone" title="" name="phone_number">
 
                   </div>
                   <div class="fields-row">
-                     <button class="pdlr40 pdtb10 rc20 mtb25">SUBMIT</button>
+                     <button class="pdlr40 pdtb10 rc20 mtb25" type="submit">SUBMIT</button>
                   </div>
                </form>
 
@@ -88,23 +90,25 @@
                   <h3>Want to Rent Storage Space ?</h3>
                   <h4>Start here!</h4>
                </div>
-               <form action="#" class="depositor pd30 pdtb20">
+               <div class="dv-notify-success" style="color: green">Thank you for registering with us</div>
+<div class="dv-notify-failed" style="color: red">There was an error adding you. Please retry.</div>
+               <form action="#" class="depositor pd30 pdtb20 dv-add-oneto:leads:depositor">
                   <div class="fields-row">
                      <div class="field-wrap">
-                        <input type="text" id="depo-firstname" placeholder="first Name" title="" name="">
+                        <input type="text" id="depo-firstname" placeholder="first Name" title="" name="first_name">
                      </div>
                      <div class="field-wrap">
-                        <input type="text" id="depo-lastname" placeholder="last Name" title="" name="">
+                        <input type="text" id="depo-lastname" placeholder="last Name" title="" name="last_name">
                      </div>
                   </div>
                   <div class="fields-row">
-                     <input type="text" id="depo-email" placeholder="Email" title="" name="">
-                     <input type="password" id="depo-password" placeholder="Password" title="" name="">
-                     <input type="text" id="depo-phone" placeholder="Phone" title="" name="">
+                     <input type="text" id="depo-email" placeholder="Email" title="" name="email">
+                     <input type="password" id="depo-password" placeholder="Password" title="" name="password">
+                     <input type="text" id="depo-phone" placeholder="Phone" title="" name="phone_number">
 
                   </div>
                   <div class="fields-row">
-                     <button class="pdlr40 pdtb10 rc20 mtb25">SUBMIT</button>
+                     <button class="pdlr40 pdtb10 rc20 mtb25" type="submit">SUBMIT</button>
                   </div>
                </form>
                <div class="pdlr30">
@@ -357,5 +361,7 @@
 <script src="js/ui/Barge.Dom.TabbedView.js"></script>
 
 <script src="js/sharehouse.js"></script>
+
+<script src="http://sharehouse-rc1.herokuapp.com/js/devless-sdk.js" class="devless-connection" devless-con-token="9b99b11895722438a725427ef1b57e2b"  ></script>
 </body>
 </html>
