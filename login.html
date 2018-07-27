@@ -56,28 +56,27 @@
          <div id="forms-parent" class="landing-form no-input-spacing container rc elevated mt80 fph6 rltv">
             <div class="fp" id="opform">
                <div class="l-form-head pd30 pdb10 pdt0 bb">
-                  <h3>Own a warehouse ?</h3>
-                  <h4>Register with us</h4>
+                  <h3>Already have an account?</h3>
+                  <h4>Login with us</h4>
                </div>
-               <div class="dv-notify-success" style="color: green">Thank you for registering with us</div>
-<div class="dv-notify-failed" style="color: red">There was an error adding you. Please retry.</div>
-               <form action="#" class="operator pd30 pdtb20 dv-add-oneto:leads:operator">
-                  <div class="fields-row">
+               <div class="dv-notify" style="color: green">Thank you for signing with us.</div>
+               <form action="/index.html" class="operator pd30 pdtb20 dv-signin">
+                  <!-- <div class="fields-row">
                      <div class="field-wrap">
-                        <input type="text" id="depo-firstname" placeholder="first Name" title="" name="first_name">
+                        <input type="text" id="depo-firstname" placeholder="first Name" title="" name="firstname">
                      </div>
                      <div class="field-wrap">
-                        <input type="text" id="depo-lastname" placeholder="last Name" title="" name="last_name">
+                        <input type="text" id="depo-lastname" placeholder="last Name" title="" name="lastname">
                      </div>
-                  </div>
+                  </div> -->
                   <div class="fields-row">
                      <input type="text" id="depo-email" placeholder="Email" title="" name="email">
                      <input type="password" id="depo-password" placeholder="Password" title="" name="password">
-                     <input type="text" id="depo-phone" placeholder="Phone" title="" name="phone_number">
+                     <!-- <input type="text" id="depo-phone" placeholder="Phone" title="" name="phonenumber"> -->
 
                   </div>
                   <div class="fields-row">
-                     <button class="pdlr40 pdtb10 rc20 mtb25" type="submit">SUBMIT</button>
+                     <button class="pdlr40 pdtb10 rc20 mtb25" type="submit">LOGIN</button>
                   </div>
                </form>
 
@@ -87,41 +86,30 @@
             </div>
             <div class="fp" id="depoform">
                <div class="l-form-head pd30 pdb10 pdt0 bb">
-                  <h3>Want to Rent Storage Space ?</h3>
-                  <h4>Start here!</h4>
+                  <h3>Already have some Storage Space ?</h3>
+                  <h4>Login here!</h4>
                </div>
-               <div class="dv-notify-success" style="color: green">Thank you for registering with us</div>
-<div class="dv-notify-failed" style="color: red">There was an error adding you. Please retry.</div>
-               <form action="#" class="depositor pd30 pdtb20 dv-add-oneto:leads:depositor">
-                  <div class="fields-row">
-                     <div class="field-wrap">
-                        <input type="text" id="depo-firstname" placeholder="first Name" title="" name="first_name">
-                     </div>
-                     <div class="field-wrap">
-                        <input type="text" id="depo-lastname" placeholder="last Name" title="" name="last_name">
-                     </div>
-                  </div>
+               <div class="dv-notify" style="color: green">Thank you for signing up.</div>
+               <form action="/dashboard.html" class="depositor pd30 pdtb20 dv-signin">
                   <div class="fields-row">
                      <input type="text" id="depo-email" placeholder="Email" title="" name="email">
                      <input type="password" id="depo-password" placeholder="Password" title="" name="password">
-                     <input type="text" id="depo-phone" placeholder="Phone" title="" name="phone_number">
-
                   </div>
                   <div class="fields-row">
-                     <button class="pdlr40 pdtb10 rc20 mtb25" type="submit">SUBMIT</button>
+                     <button class="pdlr40 pdtb10 rc20 mtb25" type="submit">LOGIN</button>
                   </div>
                </form>
                <div class="pdlr30">
-                  <h4 class="">Or <a href="#">sign up with your operator account.</a></h4>
+                  <h4 class="">Or <a href="index.html">sign up with your operator account.</a></h4>
                </div>
             </div>
-            <div class="fph pd10 pdt0">
+            <!-- <div class="fph pd10 pdt0">
                <p class="fts11 pd30 pdb15 pdt0">
                   By proceeding, I agree that Sharehouse and/or its representatives may contact me by email, phone, or SMS (including
                   by automatic telephone dialing system) at the email address or number I provide, including for marketing purposes. I
                   have read and understand the relevant Driver <a href="#">Privacy Statement</a>.
                </p>
-            </div>
+            </div> -->
          </div>
 
       </div>
@@ -177,7 +165,7 @@
       </div>
    </section>
 
-   <!--<section id="about" class="container fp">
+   <!-- <section id="about" class="container fp">
       <div class="fpv col-2 txt pd30 pdt50">
          <h2 class="fph bb pd25 pdtb10 ctr">About Us</h2>
          <p class="m10 fts20 pd10 pdtb5 mlr0 rc4 rctl0 rcbl0 bl3">Sharehouse is cloud based marketplace that enables short as well as
@@ -228,7 +216,7 @@
 
       </div>
 
-   </section>-->
+   </section> -->
    <!--<section id="contact" class="container fp">
       <div class="fp txt">
          <div class="landing-form container mt80 fpv9 fph8 rltv">
@@ -257,7 +245,7 @@
          </div>
       </div>
 
-   </section>-->
+   </section> -->
    <footer class="ctr blk fdg-h">
       <div class="footer-above  pdlr50 pdt20">
          <div class="container m0a">
@@ -319,11 +307,14 @@
             <div class="fph7 fl pdlr10">
                <h1 class="alt-font bld6 fts16 iblk tz-text pdb5 mr10 xs-width-100">Subscribe to our newsletter</h1>
                <div class="fpv fph6 iblk subscribe">
-                  <form action="javascript:void(0)" method="post" class="rltv fp">
+                  <form action="#" method="post" class="rltv fp dv-add-oneto:mailing:list">
                      <input class="medium-input tt-n fph m0 pd10" data-email="required" placeholder="Your email address" id="email" name="email" type="text">
-                     <a class="default-submit title-small text-bitter-sweet" href="#">
-                        <i class="fa fa-long-arrow-right tz-icon-color"></i>
-                     </a>
+                     <!-- <a class="default-submit title-small text-bitter-sweet" href="#">
+                        <i class="fa fa-long-arrow-right tz-icon-color" type="submit"></i>
+                     </a> -->
+                     <div class="fields-row">
+                       <button class="pdlr40 pdtb10 rc20 mtb25" type="submit">Subscribe</button>
+                   </div>
                   </form>
                </div>
             </div>
